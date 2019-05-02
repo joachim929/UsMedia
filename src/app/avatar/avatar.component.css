@@ -1,0 +1,38 @@
+.svg-player {
+    border: 1px solid var(--border-color);
+    box-shadow: 0 0 2px var(--light-grey-color);
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+}
+
+.svg-player:hover {
+    transition: 0.4s;
+    border: 1px solid var(--theme-color);
+    box-shadow: 0 0 4px var(--theme-color);
+}
+
+
+.avatar-container {
+    position: relative;
+}
+
+
+.avatar-container svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Styling for avatar warning triangle */
+.warning-position {
+    cursor: pointer;
+    width: 25px;
+    position: absolute;
+    top: 25px;
+    left: 30px;
+}
+
+.warning-position svg {
+    outline: 0;
+}

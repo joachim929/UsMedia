@@ -1,0 +1,22 @@
+<article  [@fadeAnimation]="'in'" class="d-flex player-container py-2">
+
+    <!-- Checkbox -->
+    <div class="col-auto checkbox"
+         [class.checked]="player.present"
+         (click)="player.present = !player.present">
+        <svg class="rounded" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+            <path fill="" d="M32 6.364l-2.545-2.546-19.273 19.273-7.637-7.636L0 18l10.182 10.182z"/>
+        </svg>
+    </div>
+
+    <!-- Player details -->
+    <div class="col overflow-auto">
+        <h5 class="m-0 text-nowrap player-name">{{player.firstName}}</h5>
+        <p class="m-0 text-nowrap player-info">{{player.surname}}, {{player.age}} Years</p>
+    </div>
+
+    <!-- Player avatar -->
+    <div class="col-auto">
+        <app-avatar [player]="player"></app-avatar>
+    </div>
+</article>

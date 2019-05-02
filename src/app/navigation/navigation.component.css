@@ -1,0 +1,62 @@
+@media (max-width: 576px) {
+    .coach-name {
+        display: none;
+    }
+}
+
+/* Used to position the coach's name in the nav bar */
+.coach-name {
+    margin-top: auto;
+    margin-bottom: auto;
+    white-space: nowrap;
+    margin-right: 40px;
+}
+
+.svg-scool-logo, .svg-menu-container {
+    height: 50px;
+}
+
+.svg-menu-container {
+    cursor: pointer;
+    transition: 0.4s;
+    width: 50px;
+    border: 1px solid white;
+    background-color: var(--light-grey-color);
+    border-radius: 100%;
+}
+
+.svg-menu-container:hover{
+    border: 1px solid var(--border-color);
+    background-color: var(--border-color);
+}
+
+.scool-nav {
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    background-color: white;
+    border-bottom: 2px solid var(--border-color);
+}
+
+/* Adjusts ng-bootstrap drop down styling */
+.dropdown-toggle::after {
+    display: none;
+}
+
+/* Adjusts ng-bootstrap drop down styling */
+.dropdown-item:hover {
+    color: var(--theme-color);
+    transition: 0.4s;
+    text-decoration: underline;
+}
+
+/* Adjusts ng-bootstrap drop down styling */
+.dropdown-item:active {
+    transition: 0.4s;
+    background-color: var(--theme-color);
+}
+
+/* Adjusts ng-bootstrap drop down styling */
+.dropdown-item:focus {
+    outline: 0;
+}

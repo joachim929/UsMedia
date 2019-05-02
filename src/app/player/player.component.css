@@ -1,0 +1,36 @@
+.player-container {
+    border-bottom: 1px solid var(--border-color);
+    transition: 1s;
+}
+.checkbox svg {
+    cursor: pointer;
+    border: 3px solid var(--light-grey-color);
+    height: 50px;
+    transition: 1s;
+    padding: 10px;
+}
+
+.checkbox svg path {
+    fill: var(--light-grey-color);
+}
+
+.checkbox.checked svg path {
+    fill: white;
+}
+
+.checkbox.checked svg {
+    border: 3px solid var(--checkbox-color);
+    transition: 1s;
+    background-color: var(--checkbox-color);
+}
+
+.player-info, .player-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0;
+}
+
+.player-info {
+    color: var(--dark-grey-color);
+    font-weight: 600;
+}

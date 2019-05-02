@@ -1,0 +1,6 @@
+.content {
+    /* So that nothing gets accidentally hidden by the sticky nav */
+    margin-top: 120px;
+    /* Doesn't let main content of the app get too wide */
+    max-width: 440px;
+}

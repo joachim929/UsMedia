@@ -1,0 +1,35 @@
+.training-container {
+    top: 100px;
+    padding-top: 20px;
+    background-color: white;
+    z-index: 2; /* So its above players but lower than nav drop down */
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 5px 5px -5px var(--border-color);
+}
+
+/* Styles the button that is used to trigger the training drop down options */
+.training-button {
+    background-color: var(--theme-color);
+    color: white;
+}
+
+.training-button.disabled {
+    background-color: rgba(254, 111, 59, 0.69);
+}
+
+.date-range-icon {
+    fill: var(--theme-color);
+}
+
+.date-range-icon:hover {
+    transition: 0.3s;
+    fill: rgba(254, 111, 59, 0.69);
+}
+
+/* Styles down arrow svg for the training drop-down */
+.drop-down-arrow {
+    position: absolute;
+    right: 0.5rem;
+    width: 1.25rem;
+    height: 23px;
+}
